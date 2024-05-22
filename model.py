@@ -97,7 +97,7 @@ prompt = f'''
 [INST]<<SYS>>
 You are a decision-making bot. Your task is to analyze two conversations and determine if the Current Conversation is related to the previous conversation. If the current conversation has the same intent or current conversation is the answer to the previous conversation, respond as "Relevant". Otherwise, if its not answer its breaking flow then respond as "Not Relevant".<</SYS>>
 
-Current Conversation:
+Previous Conversation:
 {previous_conversation}
 
 Current Conversation:
@@ -108,5 +108,5 @@ Current Conversation:
 Response:
 '''
 
-response = get_llama2_chat_reponse(prompt, max_new_tokens=1000)
+response = get_llama2_chat_reponse(prompt, max_new_tokens=1)
 print(response)
