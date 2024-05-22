@@ -108,5 +108,5 @@ Current Conversation:
 Response:
 '''
 
-response = get_llama2_chat_reponse(prompt, max_new_tokens=10)
+response = get_llama2_chat_reponse(prompt, max_new_tokens=100)
 print(response)
